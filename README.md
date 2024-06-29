@@ -12,4 +12,7 @@ Para instalar el proyecto se debe clonar el repositorio de github con el siguien
 git clone https://github.com/JLeandroJM/Project_machine_4.git
 ```
 
-https://www.overleaf.com/8916392577bbqjcsdqhkbh#29a313
+## Overleaf
+
+Para acceder al documento de Overleaf se debe ingresar al siguiente link:
+[Overleaf](https://www.overleaf.com/8916392577bbqjcsdqhkbh#29a313)
