@@ -1,0 +1,72 @@
+digraph {
+	graph [size="12,12"]
+	node [align=left fontname=monospace fontsize=10 height=0.2 ranksep=0.1 shape=box style=filled]
+	13226798096 [label="
+ (1, 1)" fillcolor=darkolivegreen1]
+	13240003136 [label=AddmmBackward0]
+	13240007072 -> 13240003136
+	13238712384 [label="fc4.bias
+ (1)" fillcolor=lightblue]
+	13238712384 -> 13240007072
+	13240007072 [label=AccumulateGrad]
+	13240003712 -> 13240003136
+	13240003712 [label=ReluBackward0]
+	13240005008 -> 13240003712
+	13240005008 [label=AddmmBackward0]
+	13240005248 -> 13240005008
+	13238230208 [label="fc3.bias
+ (30)" fillcolor=lightblue]
+	13238230208 -> 13240005248
+	13240005248 [label=AccumulateGrad]
+	13240004192 -> 13240005008
+	13240004192 [label=MulBackward0]
+	13240004432 -> 13240004192
+	13240004432 [label=ReluBackward0]
+	13240002896 -> 13240004432
+	13240002896 [label=AddmmBackward0]
+	13240002944 -> 13240002896
+	13238712544 [label="fc2.bias
+ (30)" fillcolor=lightblue]
+	13238712544 -> 13240002944
+	13240002944 [label=AccumulateGrad]
+	13240003280 -> 13240002896
+	13240003280 [label=MulBackward0]
+	13240002560 -> 13240003280
+	13240002560 [label=ReluBackward0]
+	13240002704 -> 13240002560
+	13240002704 [label=AddmmBackward0]
+	13240003328 -> 13240002704
+	13238780944 [label="fc1.bias
+ (30)" fillcolor=lightblue]
+	13238780944 -> 13240003328
+	13240003328 [label=AccumulateGrad]
+	13240001552 -> 13240002704
+	13240001552 [label=TBackward0]
+	13240001504 -> 13240001552
+	13238780384 [label="fc1.weight
+ (30, 11)" fillcolor=lightblue]
+	13238780384 -> 13240001504
+	13240001504 [label=AccumulateGrad]
+	13240003040 -> 13240002896
+	13240003040 [label=TBackward0]
+	13240000784 -> 13240003040
+	13231344688 [label="fc2.weight
+ (30, 30)" fillcolor=lightblue]
+	13231344688 -> 13240000784
+	13240000784 [label=AccumulateGrad]
+	13240003664 -> 13240005008
+	13240003664 [label=TBackward0]
+	13240002512 -> 13240003664
+	4308066432 [label="fc3.weight
+ (30, 30)" fillcolor=lightblue]
+	4308066432 -> 13240002512
+	13240002512 [label=AccumulateGrad]
+	13240003904 -> 13240003136
+	13240003904 [label=TBackward0]
+	13240003808 -> 13240003904
+	4366208608 [label="fc4.weight
+ (1, 30)" fillcolor=lightblue]
+	4366208608 -> 13240003808
+	13240003808 [label=AccumulateGrad]
+	13240003136 -> 13226798096
+}
